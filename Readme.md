@@ -17,7 +17,7 @@ $ cat log.txt | tap-pessimist
 ## Installation
 
 ````
-npm install tap-pessimist
+npm install -g tap-pessimist
 ````
 
 ## License
