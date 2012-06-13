@@ -1,5 +1,7 @@
 # tap-pessimist
 A small command line filtration tool for filtering some of the constant spam from node-tap.
+It will output the test plan, *not ok* messages, potentially a bailout, then exit once the stream
+has ended.
 
 ## Usage
 Pipe to:
