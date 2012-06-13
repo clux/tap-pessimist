@@ -1,0 +1,18 @@
+{
+  "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
+  "name": "tap-pessimist",
+  "description": "A tap consumer that filters out all the ok spam, and just focuses on the negatives : (",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "main": "tapno.js",
+  "engines": {
+    "node": "~0.6.7"
+  },
+  "dependencies": {
+    "tap": "~0.2.5",
+    "logule": "~0.6.1"
+  },
+  "devDependencies": {}
+}
