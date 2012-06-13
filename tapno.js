@@ -30,7 +30,7 @@ consumer.on('data', function (data) {
 });
 
 consumer.on('bailout', function (reason) {
-  log.error("Bailed out after", num, "messages,", fails, 'failures. because:', reason);
+  log.error("Bailed out after", num, "messages,", fails, 'failures with: "' + reason + '"');
   process.exit();
 });
 
