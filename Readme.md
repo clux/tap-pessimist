@@ -2,15 +2,16 @@
 A small command line filtration tool for filtering some of the constant spam from node-tap.
 
 ## Usage
+Pipe to:
 
 ````bash
-producerApp | tap-pessimist
+$ producerApp | tap-pessimist
 ````
 
 or
 
 ````bash
-cat log.txt | tap-pessimist
+$ cat log.txt | tap-pessimist
 ````
 
 ## Installation
