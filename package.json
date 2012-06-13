@@ -2,7 +2,7 @@
   "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
   "name": "tap-pessimist",
   "description": "A tap consumer that filters out all the ok spam, and just focuses on the negatives : (",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/clux/tap-pessimist.git"
@@ -17,5 +17,6 @@
     "tap": "~0.2.5",
     "logule": "~0.6.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "optionalDependencies": {}
 }
