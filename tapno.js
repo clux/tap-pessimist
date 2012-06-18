@@ -31,7 +31,7 @@ consumer.on('data', function (data) {
 
 consumer.on('bailout', function (reason) {
   log.error("Bailed out after", num, "messages,", fails, 'failures with: "' + reason + '"');
-  process.exit();
+  process.exit(1);
 });
 
 consumer.on('end', function () {
@@ -40,7 +40,7 @@ consumer.on('end', function () {
     process.exit(1);
   }
   log.info('output terminated - all ' + num + ' messages verified');
-  process.exit(0)
+  process.exit(0);
 });
 
 process.stdin.resume();
