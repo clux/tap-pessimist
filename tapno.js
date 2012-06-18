@@ -37,11 +37,10 @@ consumer.on('bailout', function (reason) {
 consumer.on('end', function () {
   if (fails > 0) {
     log.warn('output terminated - ' + fails + ' errors');
+    process.exit(1);
   }
-  else {
-    log.info('output terminated - all ' + num + ' messages verified');
-  }
-  process.exit();
+  log.info('output terminated - all ' + num + ' messages verified');
+  process.exit(0)
 });
 
 process.stdin.resume();
