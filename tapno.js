@@ -8,9 +8,9 @@
  * b) cat log.txt | tap-pessimist
  */
 
-var tap = require('tap')
-  , log = require('logule')
-  , consumer = new tap.Consumer(); // inherits from Stream
+var consumer = new require('tap').Consumer() // inherits from Stream
+  , log = require('logule');
+
 
 var num = 0, fails = 0;
 
@@ -24,7 +24,7 @@ consumer.on('data', function (data) {
     num += 1;
     if (!data.ok) {
       fails += 1;
-      log.sub('#' + data.id).error(data.name); // might as well highlight id of failed tests
+      log.error('#' + data.id + ' not ok - ' + data.name);
     }
   }
 });
@@ -36,10 +36,11 @@ consumer.on('bailout', function (reason) {
 
 consumer.on('end', function () {
   if (fails > 0) {
-    log.warn('output terminated - ' + fails + ' errors');
+    log.warn('output terminated - ' + fails + ' failures');
     process.exit(1);
   }
-  log.info('output terminated - all ' + num + ' messages verified');
+  // tap will send a not ok if end with num less than test plan end
+  log.info('output terminated - all ' + num + ' tests verified');
   process.exit(0);
 });
 
