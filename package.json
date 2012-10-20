@@ -11,14 +11,9 @@
   "bin": {
     "tap-pessimist": "./tapno.js"
   },
-  "engines": {
-    "node": "~0.6.7"
-  },
   "dependencies": {
-    "tap": "~0.2.5",
-    "logule": "~0.6.1"
+    "tap": "~0.3.1",
+    "logule": "~1.1.0"
   },
-  "devDependencies": {},
-  "optionalDependencies": {},
   "license": "MIT"
 }

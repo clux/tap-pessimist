@@ -6,21 +6,21 @@ has ended.
 ## Usage
 Pipe to:
 
-````bash
+```bash
 $ producerApp | tap-pessimist
-````
+```
 
 or
 
-````bash
+```bash
 $ cat log.txt | tap-pessimist
-````
+```
 
 ## Installation
 
-````
+```
 npm install -g tap-pessimist
-````
+```
 
 ## License
 MIT-Licensed. See license file for details.
