@@ -1,7 +1,7 @@
 # tap-pessimist
-A small command line filtration tool for filtering some of the constant spam from node-tap.
-It will output the test plan, *not ok* messages, potentially a bailout, then exit once the stream
-has ended.
+[![build status](https://secure.travis-ci.org/clux/tap-pessimist.svg)](http://travis-ci.org/clux/tap-pessimist)
+
+A small command line filtration tool for filtering some of the constant spam from node-tap. It will only show failed asserts and it will exit with a zero exit code if everything passed, or 1 if there were failed asserts.
 
 ## Usage
 Pipe to:

@@ -1,0 +1,4 @@
+TAP version 13
+1..2
+ok should not see this
+not ok should see this
