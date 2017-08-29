@@ -1,5 +1,5 @@
 {
-  "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
+  "author": "Eirik Albrigtsen <sszynrae@gmail.com>",
   "name": "tap-pessimist",
   "description": "A tap consumer that filters out all the ok spam, and just focuses on the negatives : (",
   "version": "1.0.1",
